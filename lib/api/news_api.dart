@@ -29,7 +29,7 @@ class NewsApi {
     }
   }
 
-  Future<List<NewsModel>> headlineNews() async {
+  Future<List<NewsModel>> topHeadlineNews() async {
     http.Response response = await http.get(Uri.parse(headlineApi));
 
     try {
